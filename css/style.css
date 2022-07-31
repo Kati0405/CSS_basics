@@ -1,0 +1,194 @@
+.tm-sidebar,
+.tm-content-header,
+section {
+    box-shadow: 0px 0px 12px 0px rgba(61, 55, 61, 0.7);
+}
+
+.tm-banner{ 
+    background-color: rgba(128, 128, 128, 0.1); 
+}
+
+.tm-banner-inner {
+    background-color: #fff;
+}
+
+.tm-nav-item:hover {
+    background-color: #87cefa;
+    color: #fff;
+}
+
+.tm-nav-item a:hover {
+    color: #fff;
+}
+
+.section-title {
+    color: #87cefa;
+    font-weight: bold;
+}
+
+section::before {
+    content: "";
+    border-left: 250px solid #00c3d9b3;
+    border-bottom: 34px solid transparent;
+    border-top: transparent;  
+}
+
+#main span {
+    color: #87cefa; 
+}
+
+#main {
+    display: flex;
+    align-items: center;
+}
+
+#main img {
+    width: 100%;
+}
+
+#main .tm-team-description-container {
+    width: 36.5%;
+}
+
+#main .tm-team-description-container p::first-letter {
+    font-size: 30px; 
+}
+
+.box-bg:hover {
+    background-color: #87cefa;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.box-bg:hover > h2 {
+    color: #fff;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+#we-are .tm-section-title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#we-are ol {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#we-are ol li {
+    padding: 0 20px;
+}
+
+#we-are ol li a:visited {
+    text-decoration: underline;
+}   
+
+#our-work p:nth-of-type(1) {
+    font-style: italic;
+}
+
+#our-work p:nth-of-type(2) {
+    font-weight: bold;
+}
+
+.gallery-container {
+    display: flex;
+}
+
+.box-work {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 28px;
+    font-size: .9rem;
+}
+
+.box-work h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.box-work a{
+    margin-top: auto;
+}
+
+#our-work .gallery-container h2 {
+    font-weight: bold;
+}
+
+#ideas .tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+.mandatory-field::after {
+    position: absolute;
+    top: 0;
+    content:"*"; 
+    color: red;
+    font-weight: bold;
+}
+
+.btn-primary {
+    display: block;
+    margin-left: auto;
+    width: 193px;
+    height: 66px;
+    border-radius: 0%;
+    font-size: 1.4em;
+    background-color: #fff;
+    border: solid 1px #87cefa;
+    color: #87cefa;
+}
+
+.btn-primary:hover {
+    background-color: #87cefa;
+    border: solid 1px #87cefa;
+}
+
+@media print {
+    #about,
+    #we-are,
+    #our-work,
+    #ideas,
+    #forms,
+    .tm-sidebar {
+        display: none;
+    }
+
+    #main {
+        display: block;
+        text-align: center;
+    }
+
+    #main .tm-team-description-container {
+        width: 100%;
+        max-width: 800px;
+        padding: 0;
+    }
+
+    #main .color-blue {
+        color: #000;
+    }
+    
+    .section-title { 
+        color: blue; 
+        font-weight: normal; 
+        margin-bottom: 10px; 
+      } 
+
+      section::before {
+        display: none;
+      }
+
+      .tm-content-box {
+          margin: 0;
+      }
+
+      @page { 
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+}
+
